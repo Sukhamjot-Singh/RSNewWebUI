@@ -15,7 +15,7 @@ async function updateDisplayBoards(keyid, details) {
     .rsJsonApiRequest(
       '/rsposted/getBoardsInfo',
       {
-        boardIds: [keyid],
+        boardsIds: [keyid],
       },
       (data) => {
         details = data.boardsInfo[0];
